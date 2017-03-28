@@ -78,7 +78,7 @@ $(document).ready(function() {
 <center><h1 style="padding: 40px;"><u>Faculty Adviser</u></h1></center>
 {% for member in site.data.members %} {% if member.visible == "faculty" %}
 
-	<img src="{{ member.img }}" style="margin-top:0px; border-radius: 50%; margin-bottom:5px; margin-right:10px; float:left; width:120px; height: 120px !important">
+	<img src="{{ site.repositry }}{{ member.img }}" style="margin-top:0px; border-radius: 50%; margin-bottom:5px; margin-right:10px; float:left; width:120px; height: 120px !important">
 	
 	<h1 style="font-size: 20px;">{{ member.name }}</h1>
 	
@@ -125,7 +125,7 @@ $(document).ready(function() {
 <center><h1 style="padding: 30px;"><u>Doctoral Researchers</u></h1></center>
 {% for member in site.data.members %} {% if member.visible == "phd" %}
 
-	<img src="{{ member.img }}" style="margin-top:0px; border-radius: 50%; margin-bottom:5px; margin-right:10px; float:left; width:120px; height: 120px !important">
+	<img src="{{ site.repositry }}{{ member.img }}" style="margin-top:0px; border-radius: 50%; margin-bottom:5px; margin-right:10px; float:left; width:120px; height: 120px !important">
 	
 	<h1 style="font-size: 20px;">{{ member.name }}</h1>
 	
@@ -173,7 +173,7 @@ $(document).ready(function() {
 <center><h1 style="padding: 30px;"><u>Graduate Students</u></h1></center>
 {% for member in site.data.members %} {% if member.visible == "pg" %}
 
-	<img src="{{ member.img }}" style="margin-top:0px; margin-bottom:5px; border-radius: 50%; margin-right:10px; float:left; width:120px; height: 120px !important">
+	<img src="{{ site.repositry }}{{ member.img }}" style="margin-top:0px; margin-bottom:5px; border-radius: 50%; margin-right:10px; float:left; width:120px; height: 120px !important">
 	
 	<h1 style="font-size: 20px;">{{ member.name }}</h1>
 	
@@ -221,7 +221,7 @@ $(document).ready(function() {
 <center><h1 style="padding: 30px;"><u>Under-Graduate Students</u></h1></center>
 {% for member in site.data.members %} {% if member.visible == "ug" %}
 
-	<img src="{{ member.img }}" style="margin-top:0px; margin-bottom:5px; margin-right:10px; border-radius: 50%; float:left; width:120px; height: 120px !important">
+	<img src="{{ site.repositry }}{{ member.img }}" style="margin-top:0px; margin-bottom:5px; margin-right:10px; border-radius: 50%; float:left; width:120px; height: 120px !important">
 	
 	<h1 style="font-size: 20px;">{{ member.name }}</h1>
 	
@@ -269,7 +269,7 @@ $(document).ready(function() {
 <center><h1 style="padding: 30px;"><u>Alumni</u></h1></center>
 {% for member in site.data.members %} {% if member.visible == "alumni" %}
 
-	<img src="{{ member.img }}" style="border-radius: 50%; margin-top:0px; margin-bottom:5px; margin-right:10px; float:left; width:120px; height: 120px !important">
+	<img src="{{ site.repositry }}{{ member.img }}" style="border-radius: 50%; margin-top:0px; margin-bottom:5px; margin-right:10px; float:left; width:120px; height: 120px !important">
 	
 	<h1 style="font-size: 20px;">{{ member.name }}</h1>
 	
